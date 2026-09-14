@@ -4,7 +4,7 @@ export default function ProductCard({ product }) {
 
     return (
         <div className="product-card" key={product.id}>
-            <img src={product.image} alt={product.name} className="product-image" />
+            <img alt={product.name} src={product.image} className="product-image" />
             <div className="product-card-content">
                     <h3 className="product-card-name">{product.name}</h3>
                     <p className="product-card-price">${product.price.toFixed(2)}</p>
